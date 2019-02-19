@@ -1,0 +1,24 @@
+.modulo{
+	    display: grid;
+    width: 300px;
+    margin: auto;
+    background-color: #fff;
+        padding: 10px 15px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px #ccc;
+}
+#tempo{
+	text-align: center;
+	margin-top:100px;
+}
+span{
+	background-color: grey;
+	color:white;
+	font-family: cursive;
+}
+.flex{
+	border-style:solid;
+	border-color:grey;
+	border-width:20px;
+	border-radius: 3px;
+}
