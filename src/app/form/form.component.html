@@ -1,0 +1,26 @@
+<form [formGroup]="mioForm">
+
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Nome" formControlName="nome">
+  </mat-form-field>
+
+<mat-form-field class="example-full-width">
+    <input matInput placeholder="Cognome" formControlName="cognome">
+  </mat-form-field>
+
+   <mat-form-field class="example-full-width">
+    <input matInput placeholder="Citta" formControlName="citta">
+  </mat-form-field>
+
+  <mat-form-field>
+  <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+</form>
+<h2>Risultato in tempo reale:</h2>
+<p>Nome inserito:{{this.mioForm.value.nome}}</p>
+<p>Cognome inserito:{{this.mioForm.value.cognome}}</p>
+<p>Citta inserita:{{this.mioForm.value.citta}}</p>
+
+
